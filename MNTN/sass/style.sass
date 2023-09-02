@@ -3,37 +3,44 @@
     margin: 0
     padding: 0
 
-@font-face
+a
+    text-decoration: none
+
+.body
+    background-image: url('../img/bg.jpg')
+    background-color: #0B1D26
     font-family: 'Gilroy'
-    src: url('../fonts/Gilroy-ExtraBold.eot')
-    src: url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
-    url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
-    font-weight: 800
-    font-style: normal
 
-    &
-        font-family: 'Gilroy'
-        src: url('../fonts/Gilroy-Bold.eot')
-        src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gilroy-Bold.woff') format('woff'),
-    url('../fonts/Gilroy-Bold.ttf') format('truetype');
-        font-weight: 700
-        font-style: normal
-
-    &
-        font-family: 'Gilroy'
-        src: url('../fonts/Gilroy-Medium.eot')
-        src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gilroy-Medium.woff') format('woff'),
-    url('../fonts/Gilroy-Medium.ttf') format('truetype');
-        font-weight: 500
-        font-style: normal
+.subtitle
+    &__line
+        background-color: #FBD784
+        width: 72px
+        height: 2px
 
 .header
-    background: url('../img/bg.png')
     padding: 64px 80px 0 80px
+    &__menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 200px
 
-.memu, .nav__list
-    display: flex
-    justify-content: space-between
+.menu
+    &__logo
+        font-size: 32px
+    &__link
+        color: #FFFFFF
+        &:hover
+            text-decoration: underline
+    &__account
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+.nav
+    width: 285px
+    &__list
+        display: flex
+        justify-content: space-between
+    &__list-item
+        list-style-type: none
