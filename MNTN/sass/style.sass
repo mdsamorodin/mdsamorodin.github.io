@@ -6,28 +6,81 @@
 a
     text-decoration: none
 
-.body
-    background-image: url('../img/bg.jpg')
-    background-color: #0B1D26
-    font-family: 'Gilroy'
+.container
+    width: 1260px
+    margin: 0 auto
+
+.title
+    color: #FFF
+    font-family: Chronicle Display
+    font-size: 64px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
 
 .subtitle
+    display: flex
+    align-items: center
+    &__text
+        color: #FBD784
+        font-size: 18px
+        font-style: normal
+        font-weight: 800
+        line-height: normal
+        letter-spacing: 6px
+        text-transform: uppercase
     &__line
         background-color: #FBD784
         width: 72px
         height: 2px
+        margin-right: 24px
+
+.descr
+    color: #FFF
+    font-size: 18px
+    font-style: normal
+    font-weight: 700
+    line-height: 32px
+    margin-top: 25px
+    margin-bottom: 25px
+
+.details
+    display: flex
+    align-items: center
+    &__link
+        color: #FBD784
+        margin-right: 16px
+        font-size: 18px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+    &_white
+        color: #FFFFFF
+
+.body
+    background-image: url('../img/bg.jpg')
+    background-repeat: no-repeat
+    background-size: contain
+    background-color: #0B1D26
+    font-family: 'Gilroy'
+    padding-bottom: 120px
 
 .header
     padding: 64px 80px 0 80px
+    &__title
+        font-size: 88px
+        width: 950px
+        margin-bottom: 18px
     &__menu
         display: flex
         justify-content: space-between
         align-items: center
-        margin-bottom: 200px
+        margin-bottom: 130px
+    &__content
+        margin-left: 300px
+        margin-bottom: 723px
 
 .menu
-    &__logo
-        font-size: 32px
     &__link
         color: #FFFFFF
         &:hover
@@ -37,6 +90,12 @@ a
         justify-content: space-between
         align-items: center
 
+.logo
+    font-family: Chronicle Display
+    font-size: 32px
+    &__link
+        color: #FFFFFF
+
 .nav
     width: 285px
     &__list
@@ -44,3 +103,53 @@ a
         justify-content: space-between
     &__list-item
         list-style-type: none
+
+.content
+    position: relative
+    display: flex
+    justify-content: space-between
+    margin-bottom: 200px
+    &__text
+        margin-left: 150px
+        margin-top: 140px
+        width: 460px
+    &__number
+        position: absolute
+        top: 38px
+        color: #FFF
+        font-size: 240px
+        font-style: normal
+        font-weight: 700
+        line-height: 240px
+        opacity: 0.1
+        &_right
+            right: 300px
+
+.footer
+    display: flex
+    justify-content: space-between
+    &__descr
+        width: 303px
+    &__links
+        display: flex
+        justify-content: space-between
+    &__link
+        color: #FFF
+        &:hover
+            text-decoration: underline
+    &__links-block
+        margin-left: 200px
+    &__links-title
+        color: #FBD784
+        font-size: 24px
+        font-style: normal
+        font-weight: 700
+        line-height: 32px
+        margin-bottom: 20px
+    &__list-item
+        list-style-type: none
+        margin-bottom: 7px
+        font-size: 18px
+        font-style: normal
+        font-weight: 500
+        line-height: 32px
