@@ -38,14 +38,14 @@
             </div>
             <h1 class="title header__title">Be prepared for the Mountains and beyond!</h1>
             <div class="details">
-                <a href="#" class="details__link details_white">scroll down</a>
+                <a href="#first-block" class="details__link details_white">scroll down</a>
                 <img src="icons/arrow-down.svg" alt="Стрелка вниз" class="details__arrow">
             </div>
         </div>
     </header>
 
     <div class="container">
-        <section class="content">
+        <section id="first-block" class="content">
             <h2 class="content__number">01</h2>
             <div class="content__text">
                 <div class="subtitle">
@@ -57,8 +57,12 @@
                     hikes. This hiking level guide will help you plan hikes according to different hike ratings set by
                     various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate,
                     advanced moderate, expert, or expert backpacker? </p>
+                <p class="descr content__extrainfo">1111111 Вид спортивного туризма. Основной целью является пешее
+                    преодоление
+                    группой маршрута по пересечённой местности. Туристское многоборье - наиболее популярная
+                    разновидность спортивного пешеходного туризма в РФ не только среди взрослых, но и детей.</p>
                 <div class="details">
-                    <a href="#" class="details__link">read more</a>
+                    <a href="#" class="details__link details__link-readmore">read more</a>
                     <img src="icons/arrow-right.svg" alt="Стрелка вправо" class="details__arrow">
                 </div>
             </div>
@@ -83,8 +87,12 @@
                     beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get
                     sweaty
                     or wet. </p>
+                <p class="descr content__extrainfo">222222 Вид спортивного туризма. Основной целью является пешее
+                    преодоление
+                    группой маршрута по пересечённой местности. Туристское многоборье - наиболее популярная
+                    разновидность спортивного пешеходного туризма в РФ не только среди взрослых, но и детей.</p>
                 <div class="details">
-                    <a href="#" class="details__link">read more</a>
+                    <a href="#" class="details__link details__link-readmore">read more</a>
                     <img src="icons/arrow-right.svg" alt="Стрелка вправо" class="details__arrow">
                 </div>
             </div>
@@ -105,8 +113,12 @@
                     my
                     next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a
                     right turn at the junction.</p>
+                <p class="descr content__extrainfo">3333333 Вид спортивного туризма. Основной целью является пешее
+                    преодоление
+                    группой маршрута по пересечённой местности. Туристское многоборье - наиболее популярная
+                    разновидность спортивного пешеходного туризма в РФ не только среди взрослых, но и детей.</p>
                 <div class="details">
-                    <a href="#" class="details__link">read more</a>
+                    <a href="#" class="details__link details__link-readmore">read more</a>
                     <img src="icons/arrow-right.svg" alt="Стрелка вправо" class="details__arrow">
                 </div>
             </div>
@@ -145,7 +157,16 @@
         </footer>
     </div>
 
-    <script src="practise.js"></script>
+    <div class="overlay hide">
+        <div class="modal">
+            <div class="modal__close">&times;</div>
+            <h2 class="subtitle__text modal__title">What is hiking?</h2>
+            <p class="descr modal__descr"></p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -83,8 +83,9 @@ a
 .menu
     &__link
         color: #FFFFFF
+        transition: 0.3s
         &:hover
-            text-decoration: underline
+            color: #FBD784
     &__account
         display: flex
         justify-content: space-between
@@ -108,6 +109,7 @@ a
     position: relative
     display: flex
     justify-content: space-between
+    padding-top: 50px
     margin-bottom: 200px
     &__text
         margin-left: 150px
@@ -115,7 +117,7 @@ a
         width: 460px
     &__number
         position: absolute
-        top: 38px
+        top: 88px
         color: #FFF
         font-size: 240px
         font-style: normal
@@ -123,7 +125,9 @@ a
         line-height: 240px
         opacity: 0.1
         &_right
-            right: 300px
+            right: 335px
+    &__extrainfo
+        display: none
 
 .footer
     display: flex
@@ -135,8 +139,9 @@ a
         justify-content: space-between
     &__link
         color: #FFF
+        transition: 1s
         &:hover
-            text-decoration: underline
+            color: #FBD784
     &__links-block
         margin-left: 200px
     &__links-title
@@ -153,3 +158,36 @@ a
         font-style: normal
         font-weight: 500
         line-height: 32px
+
+.overlay
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(255, 255, 255, 0.5)
+    top: 0
+
+.modal
+    padding: 25px
+    width: 500px
+    background-color: #0B1D26
+    margin: 0 auto
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    &__title
+        text-align: center
+    &__close
+        color: #0B1D26
+        font-size: 40px
+        line-height: 20px
+        cursor: pointer
+        position: absolute
+        right: -30px
+        top: 0px
+
+.hide
+    display: none
+
+.show
+    display: block
