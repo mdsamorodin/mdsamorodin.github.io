@@ -1,11 +1,14 @@
 $(document).ready(function () {
     const readMoreLinks = document.querySelectorAll('.details__link-readmore'),
         extraInfoBlocks = document.querySelectorAll('.content__extrainfo'),
-        modalPar = document.querySelector('.modal__descr'),
-        modalCloseBtn = document.querySelector('.modal__close'),
         modal = document.querySelector('.modal'),
-        overlay = document.querySelector('.overlay')
-    //Сверстать само окно, повесить классы show hide, сделать затемненный слой overlay, алгоритм: жму на определенный readmore, беру текст extrainfo с таким же индексом, вставляю в модалку этот текст через через textContent
+        modalDescr = document.querySelector('.modal__descr'),
+        modalCloseBtn = document.querySelector('.modal__close'),
+        overlayModal = document.querySelector('.overlay__modal'),
+        regisrationLink = document.querySelector('.menu__account-link'),
+        registrationCloseBtn = document.querySelector('.form-registration__close'),
+        overlayForm = document.querySelector('.overlay__form'),
+        form = document.querySelector('.form-registration')
 
     //Плавный скролл по ссылке scroll down
     $("a").on('click', function (event) {
@@ -33,20 +36,36 @@ $(document).ready(function () {
     readMoreLinks.forEach((item, i) => {
         item.addEventListener('click', (event) => {
             event.preventDefault()
-            modalPar.textContent = extraInfoBlocks[i].textContent
+            modalDescr.textContent = extraInfoBlocks[i].textContent
             document.body.style.overflow = 'hidden'
-            overlay.classList.toggle('hide')
-            overlay.classList.toggle('show')
+            overlayModal.classList.toggle('hide')
+            overlayModal.classList.toggle('show')
         })
     })
 
-    overlay.addEventListener('click', (event) => {
+    overlayModal.addEventListener('click', (event) => {
         if ((event.target.parentNode != modal && event.target != modal) || event.target == modalCloseBtn) {
-            overlay.classList.toggle('hide')
-            overlay.classList.toggle('show')
+            overlayModal.classList.toggle('hide')
+            overlayModal.classList.toggle('show')
             document.body.style.overflow = ''
         }
     })
 
+    //Форма регистрации
+    regisrationLink.addEventListener('click', (event) => {
+        event.preventDefault()
+        console.log('Отработал')
+        document.body.style.overflow = 'hidden'
+        overlayForm.classList.toggle('hide')
+        overlayForm.classList.toggle('show')
+    })
+
+    overlayForm.addEventListener('click', (event) => {
+        if ((event.target.parentNode != form && event.target != form) || event.target == registrationCloseBtn) {
+            overlayForm.classList.toggle('hide')
+            overlayForm.classList.toggle('show')
+            document.body.style.overflow = ''
+        }
+    })
 
 });

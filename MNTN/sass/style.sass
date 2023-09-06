@@ -166,25 +166,65 @@ a
     background-color: rgba(255, 255, 255, 0.5)
     top: 0
 
+.close
+    color: #0B1D26
+    font-size: 40px
+    line-height: 20px
+    cursor: pointer
+    position: absolute
+    right: -30px
+    top: 0px
+
 .modal
     padding: 25px
     width: 500px
     background-color: #0B1D26
-    margin: 0 auto
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
     &__title
         text-align: center
-    &__close
+
+.form-registration
+    width: 500px
+    padding: 25px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: space-between
+    background-color: #0B1D26
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    &__title
+        text-align: center
+        margin-bottom: 30px
+    &__input
+        font-family: Chronicle Display
+        font-weight: 400
         color: #0B1D26
-        font-size: 40px
-        line-height: 20px
+        margin: 0 auto
+        margin-bottom: 15px
+        padding: 10px
+        width: 350px
+        height: 50px
+        border-radius: 10px
+    &__btn
+        background-color: #FBD784
+        color: #0B1D26
+        font-size: 12px
+        margin: 0 auto
+        margin-top: 15px
+        padding: 10px
+        width: 200px
+        height: 40px
+        border-radius: 10px
         cursor: pointer
-        position: absolute
-        right: -30px
-        top: 0px
+        transition: 0.4s
+        &:hover
+            background-color: #fff
 
 .hide
     display: none

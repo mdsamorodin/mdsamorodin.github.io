@@ -28,7 +28,7 @@
             </nav>
             <div class="menu__account">
                 <img src="icons/account.svg" alt="Иконка человек в окружности" class="menu__account-icon">
-                <a href="#" class="menu__link">Account</a>
+                <a href="#" class="menu__link menu__account-link">Account</a>
             </div>
         </div>
         <div class="header__content">
@@ -157,12 +157,23 @@
         </footer>
     </div>
 
-    <div class="overlay hide">
+    <div class="overlay overlay__modal hide">
         <div class="modal">
-            <div class="modal__close">&times;</div>
+            <div class="close modal__close">&times;</div>
             <h2 class="subtitle__text modal__title">What is hiking?</h2>
             <p class="descr modal__descr"></p>
         </div>
+    </div>
+
+    <div class="overlay overlay__form hide">
+        <form action="#" class="form-registration">
+            <h2 class="subtitle__text form-registration__title">Регистрация</h2>
+            <div class="close form-registration__close">&times;</div>
+            <input type="text" placeholder="Ваше имя" name="name" class="descr form-registration__input">
+            <input type="text" placeholder="Ваш номер телефона" name="phone" class="descr form-registration__input">
+            <input type="email" placeholder="Ваш e-mail" name="email" class="descr form-registration__input">
+            <input type="button" value="Отправить" name="submit" class="subtitle__text form-registration__btn">
+        </form>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
