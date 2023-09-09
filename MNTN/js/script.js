@@ -8,7 +8,10 @@ $(document).ready(function () {
         regisrationLink = document.querySelector('.menu__account-link'),
         registrationCloseBtn = document.querySelector('.form-registration__close'),
         overlayForm = document.querySelector('.overlay__form'),
-        form = document.querySelector('.form-registration')
+        form = document.querySelector('.form-registration'),
+        nav = document.querySelector('.nav'),
+        menuAccount = document.querySelector('.menu__account'),
+        burgerBtn = document.querySelector('.menu__burger')
 
     //Плавный скролл по ссылке scroll down
     $("a").on('click', function (event) {
@@ -54,7 +57,6 @@ $(document).ready(function () {
     //Форма регистрации
     regisrationLink.addEventListener('click', (event) => {
         event.preventDefault()
-        console.log('Отработал')
         document.body.style.overflow = 'hidden'
         overlayForm.classList.toggle('hide')
         overlayForm.classList.toggle('show')
@@ -68,4 +70,34 @@ $(document).ready(function () {
         }
     })
 
+    //Валидация формы
+    $(form).validate({
+        rules: {
+            name: 'required',
+            phone: 'required',
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            name: "Пожалуйста, введите свое имя",
+            phone: "Пожалуйста, введите свой номер телефона",
+            email: {
+                required: "Пожалуйста, введите свою почту",
+                email: "Неправильно введен адрес почты"
+            }
+        }
+    })
+
+    $("input[name=phone]").mask("+7 (999) 999-99-99");
+
+    //Меню бергер
+    burgerBtn.addEventListener('click', (event) => {
+        nav.classList.toggle('nav_burger-active')
+        menuAccount.classList.toggle('menu__account_burger-active')
+        burgerBtn.classList.toggle('menu__burger_active')
+        document.body.classList.toggle('body_burger-active')
+    }
+    )
 });

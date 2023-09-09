@@ -19,6 +19,7 @@
             <div class="logo menu__logo">
                 <a href="#" class="logo__link">MNTN</a>
             </div>
+            <div class="menu__burger"><span></span></div>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__list-item"><a href="#" class="menu__link">Equipment</a></li>
@@ -37,7 +38,7 @@
                 <h2 class="subtitle__text">A Hiking guide</h2>
             </div>
             <h1 class="title header__title">Be prepared for the Mountains and beyond!</h1>
-            <div class="details">
+            <div class="details header__details">
                 <a href="#first-block" class="details__link details_white">scroll down</a>
                 <img src="icons/arrow-down.svg" alt="Стрелка вниз" class="details__arrow">
             </div>
@@ -71,7 +72,7 @@
     </div>
 
     <div class="container">
-        <section class="content">
+        <section class="content second-block">
             <img src="img/second.jpg" alt="Картинка гор" class="content__img">
             <h2 class="content__number content__number_right">02</h2>
             <div class="content__text">
@@ -170,14 +171,16 @@
             <h2 class="subtitle__text form-registration__title">Регистрация</h2>
             <div class="close form-registration__close">&times;</div>
             <input type="text" placeholder="Ваше имя" name="name" class="descr form-registration__input">
-            <input type="text" placeholder="Ваш номер телефона" name="phone" class="descr form-registration__input">
+            <input placeholder="Ваш номер телефона" name="phone" class="descr form-registration__input">
             <input type="email" placeholder="Ваш e-mail" name="email" class="descr form-registration__input">
-            <input type="button" value="Отправить" name="submit" class="subtitle__text form-registration__btn">
+            <input type="submit" value="Отправить" name="submit" class="subtitle__text form-registration__btn">
         </form>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
 </body>
 
 </html>
