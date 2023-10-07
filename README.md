@@ -1,4 +1,4 @@
-# GitHub Pages. My projects
+# My projects
 ## 1. Puls
 ### link: 
 <https://mdsamorodin.github.io/puls/>
