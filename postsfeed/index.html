@@ -14,26 +14,17 @@
 <body>
     <section class="content">
         <div class="container">
-            <button data-modal class="button content__button">Добавить запись</button>
+            <form class="form" action="#">
+                <h2 class="title form__title">Новая запись</h2>
+                <input required placeholder="Как тебя зовут?" name="name" type="text" class="form__input">
+                <textarea name="text" placeholder="Что нового?" cols=" 30" rows="10" class="form__input"></textarea>
+                <button data-modal class="button">Добавить запись</button>
+            </form>
             <h1 class="title content__title">Лента</h1>
             <div class="posts">
             </div>
         </div>
     </section>
-    <div class="modal hide">
-        <div class="modal__dialog">
-            <div class="modal__content">
-                <form action="#">
-                    <div data-close class="modal__close">&times;</div>
-                    <div class="modal__title">Новая запись</div>
-                    <input required placeholder="Как тебя зовут?" name="name" type="text" class="modal__input">
-                    <textarea name="text" placeholder="Что нового?" cols=" 30" rows="10"
-                        class="modal__input"></textarea>
-                    <button class="button">Опубликовать</button>
-                </form>
-            </div>
-        </div>
-    </div>
     <script src="js/script.js"></script>
 </body>
 
