@@ -1,0 +1,382 @@
+*
+    font-family: 'Inter', sans-serif
+    color: #E4E5EA
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    padding: 46px 0 20px 0
+    background-color: #0E1014
+    position: relative
+
+span
+    background-image: linear-gradient(to right, #FCB045 40%, #FF3F78)
+    color: transparent
+    background-clip: text
+    -webkit-background-clip: text
+    font-weight: 900
+.gradient1
+    background-image: linear-gradient(to right, #FCB045 50%, #f66b0e)
+.gradient2
+    background-image: linear-gradient(to right, #FCB045 80%, #ff8c3f)
+
+a
+    text-decoration: none
+    cursor: pointer
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.for-small-screens
+    display: none
+
+.title
+    font-size: 18px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    letter-spacing: 0.9px
+    &_up
+        text-transform: uppercase
+        margin-bottom: 6px
+    &_big
+        font-size: 48px
+        font-style: normal
+        font-weight: 400
+        margin-bottom: 20px
+    &_400
+        font-weight: 400
+
+.descr
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    &_500
+        font-weight: 500
+    &_grey
+        color: #656566
+        font-size: 14px
+        font-weight: 700
+        letter-spacing: 0.7px
+        text-transform: uppercase
+        margin-bottom: 20px
+
+.purple-light
+    position: absolute
+    top: -154px
+    left: 602px
+    width: 259px
+    height: 259px
+    border-radius: 259px
+    opacity: 0.5
+    background: #833AB4
+    filter: blur(196px)
+
+.purple-ball
+    position: absolute
+    top: -2px
+    left: 848px
+
+.red-ball1
+    position: absolute
+    top: 63px
+    left: 519px
+
+.red-ball2
+    position: absolute
+    top: 547px
+    left: 851px
+
+.header
+    height: 73px
+    display: flex
+    margin-bottom: 82px
+    &__contacts
+        margin-left: 161px
+        display: flex
+        justify-content: space-between
+        &__icons
+            display: flex
+            justify-content: space-between
+        &__icon
+            margin-left: 30px
+            &:first-child
+                margin-left: 47px
+        &__tel
+            width: 143px
+
+.logo
+    &__icon
+        display: flex
+        align-items: center
+        &_2
+            margin-left: 8px
+    &__text
+        font-family: 'Montserrat', sans-serif
+        margin-top: 10px
+        width: 165px
+        font-size: 10px
+        font-style: normal
+        font-weight: 300
+        line-height: normal
+
+.nav__list
+    width: 503px
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    &-item
+        margin-left: 30px
+        &:first-child
+            margin-left: 27px
+
+.main
+    display: flex
+    justify-content: space-between
+
+.red-light
+    position: absolute
+    top: 251px
+    left: -102px
+    width: 311px
+    height: 311px
+    border-radius: 311px
+    opacity: 0.5
+    background: #961A1A
+    filter: blur(196px)
+
+.gifts
+    margin-top: 15px
+    text-align: right
+    &__title
+        margin-bottom: 40px
+    &__wrapper
+        width: 330px
+        display: flex
+        flex-wrap: wrap
+        justify-content: end
+
+.gift
+    margin-bottom: 30px
+    &:nth-child(2)
+        margin-left: 31px
+    &:nth-child(4)
+        margin-left: 42px
+
+.button
+    margin-top: 31px
+    background: #4077F3
+    width: 262px
+    height: 61px
+    border: none
+
+.footer
+    margin: 69px 0 33px 0
+    padding-top: 55px
+    display: flex
+    &__list
+        list-style-type: none
+        margin-right: 52px
+        &-item
+            margin-top: 10px
+            &:first-child
+                margin-top: 0
+            &_2
+                margin-top: 0
+
+.menu
+    margin-left: 46px
+    &__lists
+        display: flex
+
+.contacts
+    text-align: right
+    margin-left: 107px
+    &__icons
+        margin: 20px 0
+
+.copyright
+    font-family: 'Montserrat', sans-serif
+    text-align: right
+    font-size: 12px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    a
+        font-family: 'Montserrat', sans-serif
+        text-decoration: underline
+
+.line
+    display: none
+
+@media (max-width: 1199px)
+    .container
+        width: 960px
+    .header
+        &__contacts
+            margin-left: 126px
+            &__tel
+                display: none
+    .red-ball2
+        top: 447px
+        left: 651px
+    .footer
+        &__list
+            margin-right: 26px
+    .contacts
+        margin-left: 0
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+    .header
+        justify-content: space-between
+        &__contacts
+            display: none
+    .title
+        font-size: 17px
+        &_big
+            font-size: 38px
+    .descr
+        font-size: 14px
+    .footer
+        &__list
+            margin-right: 0
+    .menu
+        margin-left: 0
+    .purple-ball
+        display: none
+
+    .red-ball1
+        display: none
+
+    .red-ball2
+        display: none
+
+    .purple-light
+        position: absolute
+        top: -54px
+        left: 302px
+
+@media (max-width: 767px)
+    body
+        padding: 0 40px 40px 40px
+    .for-large-screens
+        display: none
+    .for-small-screens
+        display: block
+    .title
+        &_up
+            margin-bottom: 0
+    .container
+        width: 100%
+    .descr
+        &_grey
+            margin-bottom: 20px
+        &_500
+            text-transform: uppercase
+    .main
+        flex-wrap: wrap
+        padding: 40px 15px 0 15px
+    .with-margin
+        margin-left: 3px
+    .titles
+        width: 100%
+    .gifts
+        width: 100%
+        text-align: left
+        &__wrapper
+            width: 400px
+            justify-content: start
+        &__title
+            margin: 40px 0 20px 0
+    .logo
+        display: none
+    .none
+        display: none
+    .gift__descr
+        display: none
+    .button
+        display: none
+    .nav
+        margin: 0 auto
+        &__list
+            width: 100%
+            &-item
+                margin-left: 16px
+                &:first-child
+                    margin-left: 0
+    .line
+        display: block
+        width: 10px
+        height: 2px
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%)
+        margin-right: 5px
+    .with-line
+        display: flex
+        align-items: center
+
+    .header
+        height: 55px
+        margin-bottom: 0
+        align-items: center
+    .footer
+        flex-wrap: wrap
+        margin-top: 0
+        &__list
+            margin-right: 30px
+    .about
+        width: 100%
+        margin-bottom: 30px
+    .menu
+        width: 100%
+        margin-bottom: 30px
+    .contacts
+        width: 100%
+        text-align: left
+        &__icons
+            margin: 5px 0
+    .copyright
+        text-align: left
+
+@media (max-width: 575px)
+    body
+        padding: 0
+    .purple-light
+        display: none
+    .main
+        background-image: url('../bg.png')
+        background-size: 100% 100%
+    .title
+        &_up
+            font-size: 13px
+            font-weight: 400
+            letter-spacing: 0.65px
+        &_big
+            font-size: 36px
+            font-weight: 400
+            margin-bottom: 15px
+        &_400
+            font-weight: 400
+    .gifts
+        &__wrapper
+            width: 300px
+            justify-content: start
+    .with-margin
+        margin-left: 0
+
+    .descr
+        font-size: 14px
+        &_500
+            font-size: 12px
+        &_grey
+            font-size: 12px
+            letter-spacing: 0.6px
+    .footer
+        padding: 0 15px 0 15px
+        margin-top: 40px
+    .copyright
+        padding: 0 15px 40px 15px
